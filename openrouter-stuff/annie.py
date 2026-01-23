@@ -13,9 +13,9 @@ import openai
 # Configure OpenRouter API
 client = openai.OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    # api_key=os.getenv("OPENAI_API_KEY")
-    
-      api_key="***REMOVED_OPENROUTER_KEY***"  # Set via: export OPENROUTER_API_KEY=your_key
+    api_key=os.getenv("OPENAI_API_KEY")
+    # 
+    #   
 )
 
 # ============================================================================
