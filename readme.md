@@ -16,7 +16,22 @@ git clone https://github.com/barryallen16/bichecke.git
 cd bichecke
 uv venv --python 3.11
 .venv/Scripts/activate
-uv pip install -r requirements.txt
+uv sync
 cd ui
 uv run app.py #runs the ui interface
+```
+
+Finetuned model
+- https://huggingface.co/sarav7s/qwen3vl-4b-bichecke-gguf
+- training: `notebooks/finetune-qwen3vl.ipynb`, metrics in `archive/`
+- inference: `notebooks/model_inference.ipynb` (colab/kaggle)
+
+Distillation pipeline
+- pipeline: `archive/saravana_groq_reclassify.ipynb`, results in `archive/`
+
+Website (lm studio)
+```
+lms server start --cors
+cd website
+bun run dev
 ```
