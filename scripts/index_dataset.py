@@ -5,7 +5,8 @@ from collections import Counter
 
 data_list = []
 
-# Your actual folder structure
+# Your actual folder structure (override with BICHECKE_DATA, e.g. openrouter/dataset1)
+DATA_DIR = os.environ.get('BICHECKE_DATA', 'dataset1')
 folders = [
     'spark plug fake',
     'spark plug og',
@@ -20,7 +21,7 @@ print("LOADING DATASET")
 print("="*80)
 
 for folder in folders:
-    folder_path = f"dataset1/{folder}"
+    folder_path = os.path.join(DATA_DIR, folder)
     
     # Check if folder exists
     if not os.path.exists(folder_path):
@@ -99,9 +100,10 @@ if 'fake' in label_counts and 'real' in label_counts:
 print(f"{'='*80}\n")
 
 # Save data list for later use
-with open('data_list.json', 'w') as f:
+os.makedirs('data', exist_ok=True)
+with open('data/data_list.json', 'w') as f:
     json.dump(data_list, f, indent=2)
-print("💾 Saved data_list to 'data_list.json'\n")
+print("💾 Saved data_list to 'data/data_list.json'\n")
 
 # Show sample entries
 print("Sample entries:")

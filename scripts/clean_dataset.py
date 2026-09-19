@@ -106,7 +106,7 @@ def create_clean_dataset(validation_jsonl, corrections_csv, output_dir='dataset_
 
 # Create clean dataset
 create_clean_dataset(
-    'validation_results.jsonl',
+    'data/validation_results.jsonl',
     'human_corrections.csv',  # Will use if exists
     'dataset_clean'
 )
