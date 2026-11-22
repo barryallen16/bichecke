@@ -59,5 +59,5 @@ export function useImageUpload() {
     setFileName("");
   }, []);
 
-  return { imageData, fileName, handleDrop, handleFileInput, clearImage };
+  return { imageData, fileName, handleDrop, handleFileInput, clearImage, setImageData, setFileName };
 }
