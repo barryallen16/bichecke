@@ -17,7 +17,7 @@ export function Header({ onSettingsClick, apiUrl }: HeaderProps) {
           <div>
             <div className="flex items-center gap-2">
               <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-                Bichecke
+                Loupe
               </span>
               <span className="hidden sm:inline-block px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-semibold uppercase tracking-wider">
                 Edge VLM
@@ -44,7 +44,7 @@ export function Header({ onSettingsClick, apiUrl }: HeaderProps) {
 
           {/* GitHub Star Button */}
           <a
-            href="https://github.com/barryallen16/bichecke"
+            href="https://github.com/barryallen16/loupe"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 transition-all shadow-sm"

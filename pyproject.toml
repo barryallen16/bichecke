@@ -1,5 +1,5 @@
 [project]
-name = "bichecke"
+name = "loupe"
 version = "0.1.0"
 description = "AI-based counterfeit bike parts detection via Teacher VLM distillation to compact edge Vision Language Models"
 readme = "readme.md"

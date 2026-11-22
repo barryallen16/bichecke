@@ -1,4 +1,4 @@
-# Bichecke: Edge VLM Counterfeit Detection
+# Loupe: Edge VLM Counterfeit Detection
 
 Distilling frontier Vision-Language Models into compact, edge-deployable VLMs for automated motorcycle parts warranty verification.
 
@@ -10,7 +10,7 @@ Counterfeit motorcycle components (spark plugs, helmets, air filters) cause cata
 Detecting counterfeits requires inspecting subtle physical indicators such as electrode alignment, pleat consistency, and certification markings.
 Frontier VLMs excel at this visual reasoning, but are too heavy for low-latency field deployment on mobile or edge devices.
 
-Bichecke distills visual reasoning from large teacher models into a compact on-device vision-language model.
+Loupe distills visual reasoning from large teacher models into a compact on-device vision-language model.
 The student model generates structured inspections with defect rationales, confidence ratings, and genuine vs counterfeit classifications.
 
 ```
@@ -86,8 +86,8 @@ The student model generates structured inspections with defect rationales, confi
 ### 1. Environment Setup
 
 ```bash
-git clone https://github.com/barryallen16/bichecke.git
-cd bichecke
+git clone https://github.com/barryallen16/loupe.git
+cd loupe
 uv sync
 ```
 

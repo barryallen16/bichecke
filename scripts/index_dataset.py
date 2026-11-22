@@ -5,8 +5,8 @@ from collections import Counter
 
 data_list = []
 
-# Your actual folder structure (override with BICHECKE_DATA, e.g. openrouter/dataset1)
-DATA_DIR = os.environ.get('BICHECKE_DATA', 'dataset1')
+# Your actual folder structure (override with LOUPE_DATA or BICHECKE_DATA, e.g. openrouter/dataset1)
+DATA_DIR = os.environ.get('LOUPE_DATA', os.environ.get('BICHECKE_DATA', 'dataset1'))
 folders = [
     'spark plug fake',
     'spark plug og',
