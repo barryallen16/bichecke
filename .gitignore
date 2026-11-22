@@ -4,3 +4,8 @@ misc
 __pycache__/
 *.pyc
 .gradio/
+dataset_clean/
+ui/dataset_clean/
+node_modules/
+dist/
+*.local

@@ -207,9 +207,10 @@ def get_example_images():
     
     # Try multiple possible locations
     possible_dirs = [
+        '../dataset1',
+        'dataset1',
         'dataset_clean/valid',
-        'dataset_clean/test',
-        'dataset1'
+        '../dataset_clean/valid',
     ]
     
     examples = []
@@ -305,13 +306,11 @@ with gr.Blocks(
     # Footer
     gr.Markdown("""
         ---
-        ### 📚 Project Information
-        **Team Members:** Rubeshwaran (1118), Saravanan (1127), Veerachandru (1148)  
-        **Coordinators:** Mrs. Maheswari A, Ms. Swathi  
-        **Technology:** YOLOv8 Classification | **Accuracy:** 96-98%  
-        **Supported Parts:** Spark Plugs, Helmets, Air Filters
-        
-        ⚠️ **Disclaimer:** Educational project. Consult professionals for purchase decisions.
+        ### 📚 System Information
+        **Architecture:** Lightweight Edge Classifier  
+        **Distillation Source:** Multi-modal Teacher VLM (Qwen2.5-VL / Gemini Flash)  
+        **Supported Categories:** Spark Plugs, Helmets, Air Filters  
+        **Inspection Focus:** Micro-defect detection, pleat geometry, electrode alignment
     """)
 
 # ============================================================================
