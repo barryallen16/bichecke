@@ -31,14 +31,14 @@ export function Header({ onSettingsClick, apiUrl }: HeaderProps) {
 
         {/* Actions */}
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Hugging Face Model Link */}
+          {/* Hugging Face Collection Link */}
           <a
-            href="https://huggingface.co/sarav7s/qwen3vl-4b-bichecke-gguf"
+            href="https://huggingface.co/collections/barryallen16/loupe"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-300 hover:text-white bg-slate-900 hover:bg-slate-800 border border-slate-800 transition-colors"
           >
-            <span>Model GGUF</span>
+            <span>Hugging Face</span>
             <ExternalLink className="w-3 h-3 text-slate-500" />
           </a>
 

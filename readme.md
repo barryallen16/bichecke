@@ -41,7 +41,7 @@ The student model generates structured inspections with defect rationales, confi
 +-------------------------------------------------------------+
 |                      Edge Inference                         |
 |           LM Studio (Local Server) + React UI Client        |
-|            GGUF: sarav7s/qwen3vl-4b-bichecke-gguf           |
+|      Model: barryallen16/counterfeit-detector-qwen3vl       |
 +-------------------------------------------------------------+
 ```
 
@@ -49,8 +49,8 @@ The student model generates structured inspections with defect rationales, confi
 
 ## Artifacts
 
-- **Model Weights (GGUF)**: [sarav7s/qwen3vl-4b-bichecke-gguf](https://huggingface.co/sarav7s/qwen3vl-4b-bichecke-gguf)
-- **Merged Model (LoRA)**: [barryallen16/counterfeit-detector-qwen3vl](https://huggingface.co/barryallen16/counterfeit-detector-qwen3vl)
+- **Collection**: [barryallen16/loupe](https://huggingface.co/collections/barryallen16/loupe)
+- **Model**: [barryallen16/counterfeit-detector-qwen3vl](https://huggingface.co/barryallen16/counterfeit-detector-qwen3vl)
 - **Dataset**: [barryallen16/bike_parts_counterfeit_detection](https://huggingface.co/datasets/barryallen16/bike_parts_counterfeit_detection)
 
 ---
@@ -104,9 +104,9 @@ Key rotation is supported by setting `OPENROUTER_API_KEYS="key1,key2,key3"`.
 
 ### 3. Local Model Inference (Web UI)
 
-1. Download the quantized model from Hugging Face:
-   [sarav7s/qwen3vl-4b-bichecke-gguf](https://huggingface.co/sarav7s/qwen3vl-4b-bichecke-gguf).
-2. Load the GGUF model in [LM Studio](https://lmstudio.ai/) and start the local server with CORS:
+1. Access the model from Hugging Face:
+   [barryallen16/counterfeit-detector-qwen3vl](https://huggingface.co/barryallen16/counterfeit-detector-qwen3vl).
+2. Load the model in [LM Studio](https://lmstudio.ai/) and start the local server with CORS:
    ```bash
    lms server start --cors
    ```
